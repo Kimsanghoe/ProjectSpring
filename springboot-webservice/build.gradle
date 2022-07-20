@@ -26,9 +26,19 @@ repositories {
 }
 
 dependencies {
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
     implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.projectlombok:lombok:1.18.22')
+
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+    testImplementation('org.projectlombok:lombok:1.18.22')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 
+}
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
 }
 
 
