@@ -2,7 +2,7 @@ package com.fs.springboot.web;
 
 import com.fs.springboot.web.dto.PostsResponseDto;
 import com.fs.springboot.web.dto.PostsUpdateRequestDto;
-import com.fs.springboot.web.dto.posts.PostsService;
+import com.fs.springboot.domain.posts.PostsService;
 import com.fs.springboot.web.dto.PostsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
